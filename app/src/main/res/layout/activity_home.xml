@@ -10,26 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Home">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="415dp"
-        android:layout_marginEnd="14dp"
-        android:fontFamily="@font/alfa_slab_one"
-
-        android:shadowDx="-2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="Orkiestra Dęta GŁOWNO"
-        android:textAlignment="center"
-        android:textColor="#2923a9"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"/>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -46,23 +26,23 @@
 
         <Button
             android:id="@+id/bt_wyloguj"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:textColor="#FEFFF7"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:background="@drawable/buttonshape_a"
             android:text="Wyloguj"/>
 
         <Button
             android:id="@+id/bt_spotkania"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:textColor="#FEFFF7"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:background="@drawable/buttonshape_a"
             android:text="Spotkania"/>
     </LinearLayout>
@@ -82,23 +62,23 @@
 
         <Button
             android:id="@+id/bt_kaledarz"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:textColor="#FEFFF7"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:background="@drawable/buttonshape_a"
             android:text="Kalendarz"/>
 
         <Button
             android:id="@+id/bt_czonkowie"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:textColor="#FEFFF7"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:background="@drawable/buttonshape_a"
             android:text="Członkowie"/>
     </LinearLayout>

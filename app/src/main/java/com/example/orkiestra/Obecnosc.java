@@ -59,14 +59,11 @@ public class Obecnosc extends AppCompatActivity {
         btn_sprawdz = (Button) findViewById(R.id.bt_sprawdz);
 
 
-        // databaseReference = FirebaseDatabase.getInstance().getReference("Attendence");
-// FROM LOACATION BUT REMBER TO GIVE IT INSIDE LOOOP ELSE WILL COME BACK
+
+        // FROM LOACATION .................
         final DatabaseReference memberReference = database.getReference("Member");
-
-        // final     DatabaseReference fromPath = FirebaseDatabase.getInstance().getReference("students");
-
         memberReference.orderByChild("nazwisko").equalTo(nazwisko.getText().toString());
-//....................... TO LOCATION
+        //....................... TO LOCATION
         final DatabaseReference attendanceReference = database.getReference("Attendence").child(tv_nazwa.getText().toString())
                 .child("Data = " + data).child(nazwisko.getText().toString());
 

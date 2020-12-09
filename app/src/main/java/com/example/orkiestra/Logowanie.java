@@ -80,7 +80,7 @@ public class Logowanie extends AppCompatActivity {
 
                                 if (user.getHaslo().equals(edt_haslo.getText().toString())) {
                                     smsManager = SmsManager.getDefault();
-                                    smsManager.sendTextMessage(edt_login.getText().toString(),null,wiadomosc,null,null);
+                                    smsManager.sendTextMessage(user.getTel(),null,wiadomosc,null,null);
                                     Intent homeIntent = new Intent(Logowanie.this, Home.class);
                                     startActivity(homeIntent);
                                     Toast.makeText(getApplicationContext(), "Gotowe", Toast.LENGTH_SHORT).show();
